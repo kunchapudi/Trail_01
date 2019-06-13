@@ -1,0 +1,13 @@
+{
+   "role":{ 
+    "name":"Student02_Kar.I338140_DB.Roles::ReadAccess#",
+    "object_privileges":[ 
+      { 
+        "name": "Student02_Kar.I338140_DB::Init_Tab_I338140.EMP_TAB", 
+        "type":"TABLE", 
+        "privileges_with_grant_option":[ "SELECT","INSERT","DELETE","UPDATE"]
+    
+      }
+      ]
+      }
+      }

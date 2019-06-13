@@ -1,0 +1,9 @@
+{
+  "Student02_Kar.I338140_DB.Synonyms::S02_MyTable": {
+    "target": {
+      "object": "XSA_Demo_Student03.DB_Module::Student03.myTable",
+      "schema": "XSA_DEMO_STUDENT03_HDI_DB_MODULE_1",
+      "database": "H00"
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+"ServiceName_1": {
+"object_owner":{
+"container_roles":["XSA_Demo_Student03.DB_Module.Roles::ReadAccess#"]
+},
+"application_user": {
+		"container_roles":["XSA_Demo_Student03.DB_Module.Roles::ReadAccess"]
+		} 
+}
+}

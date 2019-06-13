@@ -1,0 +1,41 @@
+ID: Student02_Kar_Mtar
+_schema-version: '2.0'
+description: Initial_Karthik_2.0
+version: 0.0.1
+
+modules:
+ - name: I338140_DB
+   type: hdb
+   path: I338140_DB
+   requires:
+    - name: hdi_I338140_DB
+      properties:
+        TARGET_CONTAINER: ~{hdi-container-name}
+
+
+
+    - name: cross-container-service-1
+      group: SERVICE_REPLACEMENTS
+
+      properties:
+        key: ServiceName_1
+        service: ~{the-service-name}
+                          
+
+
+resources:
+ - name: hdi_I338140_DB
+   parameters:
+      config:
+         schema: SCH_I338140
+   properties:
+      hdi-container-name: ${service-name}
+   type: com.sap.xs.hdi-container
+
+ - name: cross-container-service-1
+   parameters:
+      service-name: STUDENT03-9fi50ox0rf8c6390-XSA_Demo_Student03-hdi_DB_Module
+   properties:
+      the-service-name: ${service-name}
+   type: org.cloudfoundry.existing-service
+

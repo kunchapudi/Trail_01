@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="Student02_Kar.I338140_DB::CV_I338140_1" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="Test CV I338140"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="Student02_Kar.I338140_DB::Init_Tab_I338140.EMP_TAB">
+    <resourceUri>Student02_Kar.I338140_DB::Init_Tab_I338140.EMP_TAB</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews/>
+<logicalModel id="Student02_Kar.I338140_DB::Init_Tab_I338140.EMP_TAB">
+  <attributes>
+    <attribute id="ID" order="1" semanticType="empty" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ID"/>
+      <keyMapping columnObjectName="Init_Tab_I338140.EMP_TAB" columnName="ID"/>
+    </attribute>
+    <attribute id="NAME" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="NAME"/>
+      <keyMapping columnObjectName="Init_Tab_I338140.EMP_TAB" columnName="NAME"/>
+    </attribute>
+    <attribute id="DEPT" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DEPT"/>
+      <keyMapping columnObjectName="Init_Tab_I338140.EMP_TAB" columnName="DEPT"/>
+    </attribute>
+    <attribute id="CONTACTNO" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CONTACTNO"/>
+      <keyMapping columnObjectName="Init_Tab_I338140.EMP_TAB" columnName="CONTACTNO"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures>
+    <measure id="CC_1" order="5" aggregationType="sum" measureType="simple" datatype="TINYINT" expressionLanguage="SQL">
+      <descriptions defaultDescription="Counter"/>
+      <formula>1</formula>
+      </measure>
+  </calculatedMeasures>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="40" y="85"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

@@ -1,0 +1,11 @@
+namespace Student02_Kar.I338140_DB;
+
+context Init_Tab_I338140 {
+
+entity EMP_TAB {
+key ID : String(10);
+NAME : String(40);
+DEPT : String(4);
+CONTACTNO : String(10);
+};
+};
